@@ -185,7 +185,9 @@
     text-align: left;
     padding: 0;
     }
-    
+    #bar_chart{
+      padding: 0px 0px 0px 20px;
+    }
     .report{
         height: 485px !important;
     }
@@ -286,7 +288,22 @@ font-size: 14px !important;
      height: 400 !important;
      padding: 0 !important;;
    }
+    .progress{
     
+    height: 5px;
+    margin-bottom: .5rem!important;
+      
+    }
+    .charts .progressbar{
+      margin:0;
+     
+    }
+    .charts ul li{
+      font-size: 1em;
+      font-weight: 600;
+      color: #868e96;
+      padding-bottom: 5px;
+    }
     .icon-container {
     width: 40px;
     height: 40px;
@@ -296,13 +313,7 @@ font-size: 14px !important;
     font-size: 16px;
     color: #fff;
     }
-    .profile-image {
-    background-image: url("img/building.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    height: 80px;
-    background-size: cover;
-    }
+ 
     /* List-item */
     .sidebar .list-group-item {
     padding: 5px 5px !important;

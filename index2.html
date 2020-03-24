@@ -114,24 +114,30 @@
                                     <canvas id="myChart" ></canvas>
                                  </div>
                               </div>
-                              <div class="col-lg-4">
+                              <div class="col-lg-4 progressbar">
                                  <div class="card-body">
-                                    <ul>
-                                       <li>lorem</li>
+                                    <ul style="list-style-type: none;">
+                                       <li>Visits</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
                                        <div class="progress">
-                                          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                          <div class="progress-bar" role="progressbar" style="background-color : #16d9e3 ; width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                        </div>
-                                       <li>ssss</li>
+                                       <li>Traffic</li>
+                                       
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
                                        <div class="progress">
-                                          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                          <div class="progress-bar" role="progressbar" style="background-color : #00c292 ; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                        </div>
-                                       <li>ssg</li>
+                                       <li>Unique Visitors</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
                                        <div class="progress">
-                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                          <div class="progress-bar" role="progressbar" style="background-color : orange ; width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                        </div>
-                                       <li>sgsg</li>
+                                       <li>Visitors</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
                                        <div class="progress">
-                                          <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                          
+                                          <div class="progress-bar" role="progressbar" style="background-color : #03a9f3 ; width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                        </div>
                                     </ul>
                                  </div>
@@ -149,7 +155,7 @@
                      <div class="col-6" style="height: 470px;">
                         <div class="card text-default shadow">
                            
-                              <h4 class="title text-center">Todo List</h4>
+                              <h4 class="title p-2">Todo List</h4>
                               <div class="today-information rounded">
                                  <div class="row">
                                     <div class="col-6 text-center">
@@ -248,16 +254,11 @@
                      <div class="col-6" style="height: 470px;">
                         <div class="card text-default shadow">
                            <div class="card-body">
-                              <h4 class="title">Todo List</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla eos natus, nihil doloremque officiis, odit cupiditate repudiandae repellat veritatis esse quam. Dolores natus aut, aliquid quas reprehenderit ratione nihil fugiat quos laborum alias nobis iure consectetur itaque mollitia exercitationem id tempore amet doloremque aspernatur necessitatibus? Quas asperiores ipsam totam blanditiis a delectus recusandae nihil mollitia placeat! Eveniet voluptates placeat recusandae quos dicta obcaecati consequuntur? Quam quaerat alias cupiditate velit, tenetur accusantium similique illo repellendus assumenda, asperiores explicabo vel? Illo.
-                            recusandae quos dicta obcaecati consequuntur? Quam quaerat alias cupiditate velit, tenetur accusantium similique illo repellendus assumenda, asperiores explicabo vel? Illo.
-                            recusandae quos dicta obcaecati consequuntur? Quam quaerat alias cupiditate velit, 
-                            tenetur accusantium similique illo repellendus assumenda, asperiores explicabo vel? Illo.
+                              <h4 class="title">Chat</h4>
+                              <canvas id="bar_chart"></canvas>
                            </div>
                         </div>
-                     </div>
-                 
-               
+                     </div>            
             </div>
          </div>
             </section>
@@ -301,7 +302,7 @@
                                      <td>Louis Stanley</td>
                                      <td>Lorem</td>
                                      <td>231</td>
-                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                     <td><button class="btn btn-sm btn-warning">PENDING</button></td>
                                    </tr>
                                    <tr>
                                     <td>1</td>
@@ -319,7 +320,7 @@
                                      <td>Louis Stanley</td>
                                      <td>Lorem</td>
                                      <td>231</td>
-                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                     <td><button class="btn btn-sm btn-warning">COMPLETED</button></td>
                                    </tr>
                                    <tr>
                                     <td>1</td>
@@ -360,41 +361,6 @@
                         </div>
                      </div>
                  
-                  </div>
-               </div>
-            </section>
-            <section class="mt-5">
-               <div class="updates">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Latest Updates</h6>
-                           </div>
-                           <div class="card-body">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Realtime Visitors</h6>
-                           </div>
-                           <div class="card-body">
-                              <canvas id="myReport_Two"></canvas>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Realtime Visitors</h6>
-                           </div>
-                           <div class="card-body">
-                              <canvas id="myReport_Two"></canvas>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                </div>
             </section>
