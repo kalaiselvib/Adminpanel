@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 :root {
     --sidebar-bgcolor: #313642;
     --sidebar-textcolor: #222;
@@ -8,11 +10,19 @@
     --card-color3: #ffc107;
     --card-color4: #f86c6b;
     }
-    /*SideBar */
+    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    /*Body */
     body {
     background: #f6f7fb;
     overflow-x: hidden;
     }
+    ul{
+      list-style-type: none;
+     
+    }
+    
+    /*SideBar */ 
     .sidebar {
     height: 100vh;
     width: 250px;
@@ -24,71 +34,62 @@
     right: 0;
     background-color: var(--sidebar-bgcolor);
     overflow: hidden;
-    box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  
     overflow-x: hidden;
-    transition-duration: 0.5s;
+
     }
     .sidebar-menu{
-        padding-top: 70px;
+    padding-top: 100px;
     }
     .sidebar ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     }
-     .sidebar-menu ul li a {
-        display: inline-block;
-        width: 100%;
-        text-decoration: none;
-        padding: 8px 10px 8px 10px;
-        color: #d9dbe0;
-        font-weight: normal;
-        transition: all 0.3s ease;
-        font-size: 15px;
-        
+  
+    .sidebar-menu ul li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 8px 10px 8px 10px;
+    color: #d9dbe0;
+    font-weight: normal;
+   
+    font-size: 14px;
+       display: inline-block;
     }
     .sidebar-menu ul li a i {
-      
-        font-size: 12px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-       
-      }
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    }
     .sidebar-menu ul li a:hover {
     background-color: #5e687f;
     font-weight: normal;
     border-radius: 20px;
-    transition-duration: 0.2s;
+   
     color: #d2d5e2;
     }
-    .sidebar-menu .sidebar-dropdown .collapse ul {
-        padding: 5px 0;
-      }
-      
-       .sidebar-menu .sidebar-dropdown .collapse li {
-        padding-left: 25px;
-        font-size: 13px;
-      }
-      
-       .sidebar-menu .sidebar-dropdown .collapse li a:before {
-        content: "\f111";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 400;
-        font-style: normal;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        margin-right: 10px;
-        font-size: 8px;
-      }
-   
-      
+  
+  
+    #wrapper {
+    padding-left: 250px;
+    -webkit-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    }
+    /*Header */
+    .admin {
+        background-color: var(--header-admincolor);
+        color: #ffffff;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
     .image {
-    background-image: url("img/user1.png");
+    background-image: url("img/profile.jpg");
     background-position: center;
     background-repeat: repeat;
     height: 40px;
@@ -107,15 +108,64 @@
     }
     #nav_open {
     display: none;
-   
     }
-    .admin {
-    background-color: var(--header-admincolor);
-    color: #ffffff;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  /*Notification */
+  .notification-menu{
+   margin-top: 10px;
+   margin-right: 20px;
+   animation: zoomin;
+   animation-duration: 1s;
+   animation-fill-mode: none!important;
+  }
+
+  .notification-item{
+    display: flex;
+  padding: 5px;
+  }
+  .notification-image{
+  
+    margin-right: 15px !important;
+  }
+  .notification-content{
+    width: 180px;
+    margin-top: 5px;
+  }
+  .notification-content h6{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .notification-content p{
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  header{
+    cursor: pointer;
+  }
+#profileMenu{
+ margin-right: 130px;
+ margin-top: 20px;
+ width: 100px;
+ height: 130px;
+ text-align: right;
+ animation: zoomin;
+ animation-duration: 1s;
+}
+#profileMenu ul{
+  margin-top: 20px;
+}
+    /* List-item */
+    .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0.2em 1em;
+    }
+    header .list-group-horizontal .list-group-item:first-child {
+    border-radius: 100%;
     }
     .notification a {
     color: black;
@@ -124,21 +174,23 @@
     .notification i {
     font-size: 20px;
     }
-    /* Body Content
-    */
-    #wrapper {
-    padding-left: 250px;
-    transition: all ease-in 0.3s;
+    .ncontent{
+      width: 200px;
     }
+    /*Page Body */
     .page-body {
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
     height: 150vh;
-    
-    
+    animation: fade;
+    animation-duration: 2s;
+    animation-fill-mode: none!important;
     }
     .card, .card-header{
     border: none;
     }
+    /*Statistics */
     .statistics .card-footer{
     padding: 0.25rem 1rem;
     font-size: 12px;
@@ -160,84 +212,179 @@
     border: 0 solid transparent;
     color: white;
     }
-    .statistics .card-footer{
-    padding: 0.25rem 1rem;
-    font-size: 12px;
-    }
-    .charts .card-body{
-    padding: 10px !important;
-    }
-    #myChart{
-    width: 782px;
-    height: 265px;
-    overflow: hidden;
-    text-align: left;
-    padding: 0;
-    }
-    .report{
-        height: 485px !important;
-    }
-   
     .views{
+    background-image: -o-radial-gradient(center, circle 248px, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
     }
     .earnings{
+    background-image: -o-linear-gradient(110deg, #2b5876 0%, #4e4376 100%) !important;
     background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
     }
     .tasks{
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#0ba360), to(#3cba92)) !important;
+    background-image: -o-linear-gradient(bottom, #0ba360 0%, #3cba92 100%) !important;
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
     }
     .downloads{
     background-color: var(--card-color4);
     }
-    .recents{
-    font-size: 14px;
+    .statistics .card-footer{
+    padding: 0.25rem 1rem;
+    font-size: 12px;
+    }
+    /*Title */
+    .title{
+    font-weight: 400;
+    font-size: 1em;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+    }
+    /*Charts */
+    .submenu ul li a{
+     margin: 0 20px;
+     
+     font-size: 13px;
+   
+    }
+    .charts .card-body{
+    padding: 10px 20px !important;
+    }
+    .progress{
+    height: 5px;
+    margin-bottom: .5rem!important;
+    }
+    .charts .progressbar{
+    margin:0;
+    }
+    .charts ul li{
+    font-size: 1em;
+    font-weight: 600;
+    color: #868e96;
+    padding-bottom: 5px;
+    }
+    .report{
+    height: 485px !important;
+    }
+
+/*To Do */
+.todo-section .card-body{
+padding: 0.25rem;
+}
+.today-information{
+font-size: 14px !important;
+}
+.todo-time{
+  margin-top: 10px;
+}
+
+
+.todo-content{
+margin: 0px 20px 20px 20px;
+}
+.todo-content .row{
+margin-left: 15px;
+margin-right: 15px;
+font-size: 14px;
+margin-top: 15px;
+}
+.todo-content h5{
+font-size: 14px;
+
+}
+.todo-description {
+border-radius: 2px;
+}
+.circle-wrap {
+
+width: 50px;
+height: 50px;
+background: #e6e2e7;
+border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+width: 50px;
+height: 50px;
+position: absolute;
+border-radius: 50%;
+
+}
+.circle-wrap .circle .mask {
+clip: rect(0px, 50px, 50px, 25px);
+}
+.circle-wrap .circle .mask .fill {
+clip: rect(0px, 25px, 50px, 0px);
+background-color: powderblue;
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+animation: fill ease-in-out 3s;
+transform: rotate(126deg);
+}
+
+
+
+.circle-wrap .inside-circle {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #fff;
+line-height: 30px;
+text-align: center;
+margin-top: 10px;
+margin-left: 10px;
+position: absolute;
+z-index: 100;
+font-weight: 700;
+font-size: 10px;
+}
+
+.todo-section .card{
+    margin-bottom: 1.875em;
+    border-radius: 5px;
+  }
+  .orders .table{
+    border-collapse: collapse;
+    overflow: hidden;
+      
+  }
+  .orders table th{
+    text-align: left;
+  }
+  .orders table tr{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+    
+  }
+.table button{
+    height: 30px !important;
+      width: 100px !important;
+     font-size: 12px;
+  }
+
+/*Updates */
+
+    .recents .card-body{
+    padding: 5px 10px;
     }
     
-    .recents .todo-list{
-    list-style-type: none;
+    .updates .card{
+    height: 280px;
     padding: 0;
-    margin: 20px 20px;
-    text-align: justify;
     }
-    .recents .todo{
-    border:none;
-    width: 200px;
-    border-bottom: 2px solid #dcdcdc !important;
+    .updates .updates-icon{
+        width: 50px;
+        margin: 0 auto;
+        border-radius: 5px;   
+        font-size: 25px;
+        border-radius: 100%;
+        padding: 10px;
     }
-    .recents .card{
-    height:407px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    cursor: pointer;
-    }
-     .recents .card::-webkit-scrollbar{
-         display: none;
-     }
-    .recents .card:hover::-webkit-scrollbar
-    {
-        transition-duration: 0.3s;
-        display: block;
-        border-radius: 20px;
-       
-        width: 5px;
-        background-color: var(--sidebar-bgcolor);
-    }
-    .recents .display{   
-    background-position: center;
-    background-repeat: repeat;
-    height: 40px;
-    border-radius: 100%;
-    background-size: cover;
-    width: 40px;
-    }
-    .posts .row{
-    margin-right: 15px;
-    
-    }
-    .posts .row p{
-        margin-bottom: 10px !important;
-    }
+   
+   
+   
     .feed-item1
     {
     background-image: url(img/image.jpg);
@@ -250,48 +397,40 @@
     {
     background-image: url(img/image2.jpg);
     }
-    .recents .card-body{
-    padding: 10px;
-    }
-    .updates .card{
-        height: 280px;
-        padding: 0;
-    }
-    .updates .card-body{
-    padding: 5px 10px;
-    }
-    #myChart_Two{
-        height: 200px !important;
-    }
+   /*Tables */
+
     .table td,
-    .table th {
+    .table th , .table tr{
     border-top: none;
+    padding: 10px 8px!important;
     }
-    .icon-container {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 3px 5px;
-    font-size: 16px;
-    color: #fff;
+  
+    /*Animations */
+    @keyframes fade{
+      0%{
+        opacity: 0;
+       
+      }
+      100%{
+        opacity: 1;
+      }
     }
-    .profile-image {
-    background-image: url("img/building.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    height: 80px;
-    background-size: cover;
+
+    @keyframes zoomin{
+      0%{
+        opacity: 0;
+        transform: scale2d(.3,.3,.3);
+      }
+      50%{
+        opacity: 1;
+      }
     }
-    /* List-item */
-    .sidebar .list-group-item {
-    padding: 5px 5px !important;
-    }
-    .list-group-item {
-    background-color: transparent;
-    border: none;
-    padding: 0.2em 1em;
-    }
-    header .list-group-horizontal .list-group-item:first-child {
-    border-radius: 100%;
-    }
+
+    @keyframes fill {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(126deg);
+      }
+    }      

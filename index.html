@@ -33,24 +33,115 @@
                   <div class="col-lg-8 d-flex justify-content-end text-center ">
                      <div class="notification m-2">
                         <ul class="list-group list-group-horizontal">
+                             
                            <li class="list-group-item">
-                              <a href="">
-                              <i class="far fa-bell mt-1"></i><span class="badge badge-primary align-top">9</span>
+                              <div class="dropdown">
+                              <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <i class="far fa-comment mt-1"></i><span class="badge badge-primary align-top">9</span>
                               </a>
+                                 
+                            <!--Notification Content-->  
+                              <div class="dropdown-menu notification-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="card">
+                                   <div class="card-body">
+                                       <a href="">
+                                          <div class="notification-item">
+                                             <div class="notification-image image" style="background-image: url(img/image2.jpg);">
+
+                                             </div>
+                                             <div class="notification-content">
+                                                <h6>Penn Badgley</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eius.</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="">
+                                          <div class="notification-item">
+                                             <div class="notification-image image" style="background-image: url(img/image.jpg);">
+
+                                             </div>
+                                             <div class="notification-content">
+                                                <h6>Leighton Meester</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eius.</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="">
+                                          <div class="notification-item">
+                                             <div class="notification-image image" style="background-image: url(img/image1.jpg);">
+
+                                             </div>
+                                             <div class="notification-content">
+                                                <h6>Dylan Minnete</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eius.</p>
+                                             </div>
+                                          </div>
+                                       </a>  
+                                       <a href="">
+                                          <div class="notification-item">
+                                             <div class="notification-image image" style="background-image: url(img/image.jpg);">
+
+                                             </div>
+                                             <div class="notification-content">
+                                                <h6>Leighton Meester</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eius.</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="">
+                                          <div class="notification-item">
+                                             <div class="notification-image image" style="background-image: url(img/image2.jpg);">
+
+                                             </div>
+                                             <div class="notification-content">
+                                                <h6>Penn Badgley</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eius.</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                      
+                                    </div>
+                                      
+                                         
+                                    <p class="text-center">
+                                       View All
+                                    </p>   
+                                      
+                                   
+                                </div>
+                              
+                              </div>
+                             
+                             
+                           </div>
                            </li>
+                          
                            <li class="list-group-item">
+                              
                               <a href="">
-                              <i class="far fa-comment mt-1"></i><span class="badge badge-success align-top">3</span>
+                              <i class="far fa-bell mt-1"></i><span class="badge badge-success align-top">3</span>
                               </a>
                            </li>
                         </ul>
                      </div>
+                    
                      <ul class="list-group list-group-horizontal admin m-2">
                         <li class="list-group-item image">
                         </li>
                         <li class="list-group-item">John Doe</li>
                         <li class="list-group-item">
+                           <div class="dropdown">
+
+                              <a type="text" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                
                            <i class="fas fa-ellipsis-v text-default"></i>
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="profileMenu">
+                              <a class="dropdown-item" href="#">My Profile</a>
+                              <a class="dropdown-item" href="#">Settings</a>
+                              <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
                         </li>
                      </ul>
                   </div>
@@ -66,7 +157,7 @@
                      <div class="card views text-default shadow">
                         <div class="card-body">    
                            <i class="fas fa-shopping-cart fa-2x float-right" style="color: #45cfc4;";></i>
-                           <h4 class="card-title">290 +</h4>
+                           <h4 class="card-title counter" data-target="2900"> 0</h4>
                            <p class="card-text" style="font-size: 14px;">Page Views</p>
                                   
                           
@@ -78,7 +169,7 @@
                      <div class="card earnings text-default shadow">
                         <div class="card-body">
                            <i class="fas fa-money-check-alt fa-2x float-right" style="color: #00c292;";></i>
-                           <h4 class="card-title">$30200</h4>
+                           <h4 class="card-title counter" data-target="3200">0</h4>
                            <p class="card-text" style="font-size: 14px;">All Earnings</p>
                         </div>
                        
@@ -89,7 +180,7 @@
                         <div class="card-body">
                            <i class="far fa-clipboard fa-2x float-right"
                            style="color: orange;";></i>
-                           <h4 class="card-title">243</h4>
+                           <h4 class="card-title counter" data-target="2400">0</h4>
                            <p class="card-text" style="font-size: 14px;">Tasks</p>
                         </div>
                        
@@ -99,7 +190,7 @@
                      <div class="card downloads text-default shadow">
                         <div class="card-body">
                            <i class="fas fa-cloud-download-alt fa-2x float-right"  style="color: #03a9f3;";></i>
-                           <h4 class="card-title">500</h4>
+                           <h4 class="card-title counter" data-target="5000">0</h4>
                            <p class="card-text" style="font-size: 14px;">Downloads</p>
                         </div>
                       
@@ -108,252 +199,288 @@
                </div>
             </section>
             <!--Charts-->
-            <section class="mt-2">
+          <section class="mt-2 rounded">
                <div class="charts">
                   <div class="row">
-                     <div class="col-lg-9">
+                     <div class="col-lg-12">
                         <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Application Sales</h6>
-                           </div>
                            <div class="card-body">
-                              <canvas id="myChart"></canvas>
+                              <h4 class="title">
+                                 Application Sales
+                              </h4>
                            </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-3">
-                        <div class="card text-default shadow report">
-                           <div class="card-header bg-white">
-                              <h6 class="text-center">Overall Report</h6>
-                           </div>
-                           <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat enim, sunt voluptatem possimus illo perspiciatis debitis recusandae impedit eaque, quod iure harum aut ratione in esse consequuntur molestias maxime voluptate nesciunt optio velit perferendis. In necessitatibus
-                           </div>
-                           
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!---Todos-->
-            <section class="mt-5" >
-               <div class="recents">
-                  <div class="row">
-                     <div class="col-4 recent-item">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6 class="text-center">Todo List</h6>
-                           </div>
-                           <div class="card-body">
-                              <div class="row">
-                                 <div class="col-8 text-center align-middle">
-                                    <p><span>2</span> of <span>9</span> remaining</p>
+                           <div class="row">
+                              <div class="col-lg-8">
+                                 <div class="card-body">
+                                    <canvas id="myChart"  width="600" height="300"></canvas>
                                  </div>
-                                 <div class="col-4">
-                                    <button class="btn btn-success btn-sm">Edit</button>
-                                 </div>
-                          </div>
-                             
-                              <ul class="list-group todo-list align-middle" id="todo-list">
-                                 <li class="list-group-item">
-                                    <div class="checkbox checkbox-primary"><input class="todo-done" id="9" type="checkbox" checked="checked"><label for="9" class="ml-2">Nullam dolor nibh ultricies</label></div>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <div class="checkbox"><input class="bg-primary todo-done " id="8" type="checkbox" checked=""><label for="8" class="ml-2">Nullam dolor nibh ultricies</label></div>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <div class="checkbox"><input class="todo-done" id="7" type="checkbox"><label for="7" class="ml-2">Fivamus sagittis lacus vel</label></div>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <div class="checkbox"><input class="todo-done" id="6" type="checkbox" ><label for="6" class="ml-2">Cras mattis consectetur</label></div>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <div class="checkbox"><input class="todo-done" id="4" type="checkbox" checked=""><label for="4" class="ml-2">Integer posuere erat ante</label></div>
-                                 </li>
-                                 <li class="list-group-item">
-                                    <div class="checkbox"><input class="todo-done" id="4" type="checkbox" ><label for="4" class="ml-2">Integer posuere erat ante</label></div>
-                                 </li>
-                                
-                              </ul>
-                              <form action="" class="text-center mb-1">
-                                 <input type="text" name="add-todo" id="todo_new" placeholder="Add New Todo" class="todo px-2">
-                                 <button class="btn btn-success btn-sm">Add</button>
-                              </form>
-                           </div>
-                           
-                        </div>
-                     </div>
-                     <div class="col-lg-4 recent-item posts">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6 class="text-center">Recent Posts</h6>
-                           </div>
-                           <div class="card-body">
-                            <div class="row">
-                               <div class="col-3">
-                                 <div class="image shadow mx-2 feed-item1" ></div>
-                               </div>
-                               <div class="col-9">
-                                  <p class="font-weight-bold">Smith</p>
-                                 <p style="font-size:14px;">Lorem ipsum dolor sit amet consectetur </p>
-                                 
-                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-3">
-                                 <div class="image shadow mx-2 feed-item2"></div>
                               </div>
-                              <div class="col-9">
-                                 <p class="font-weight-bold">Smith</p>
-                                 <p style="font-size:14px;">Lorem ipsum dolor sit amet consectetur </p>
-                                
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-3 align-middle">
-                                 <div class="image shadow mx-2 feed-item3"></div>
-                              </div>
-                              <div class="col-9">
-                                 <p class="font-weight-bold">Smith</p>
-                                <p style="font-size:14px;">Lorem ipsum dolor sit amet consectetur </p>
-                                
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-3 align-middle">
-                                 <div class="image shadow mx-2 feed-item3"></div>
-                              </div>
-                              <div class="col-9">
-                                 <p class="font-weight-bold">Smith</p>
-                                <p style="font-size:14px;">Lorem ipsum dolor sit amet consectetur </p>
-                                
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-3 align-middle">
-                                 <div class="image shadow mx-2 feed-item3"></div>
-                              </div>
-                              <div class="col-9">
-                                 <p class="font-weight-bold">Smith</p>
-                                <p style="font-size:14px;">Lorem ipsum dolor sit amet consectetur </p>
-                                
-                              </div>
-                           </div>
-                    
-                           </div>
-                           
-                        </div>
-                     </div>
-                     <div class="col-lg-4 recent-item">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6 class="text-center">Recent Items</h6>
-                           </div>
-                           <div class="card-body">
-                              <table class="table">
-                                 <thead>
-                                    <tr class="text-muted font-weight-light">
-                                       <th scope="col">ID</th>
-                                       <th scope="col">Name</th>
-                                       <th scope="col">Price</th>
+                              <div class="col-lg-4 progressbar">
+                                 <div class="card-body">
+                                    <ul style="list-style-type: none;">
+                                       <li>Visits</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
+                                       <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="background-color : #16d9e3 ; width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                       </div>
+                                       <li>Traffic</li>
                                        
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                       <td>1</td>
-                                       <td>Smith</td>
-                                                 
-                                       <td>$14,900</td>
-                                    </tr>
-                                    <tr>
-                                      <td>2</td>
-                                       <td>Lorem</td>
-                                                   
-                                       <td>$14,900</td>
-                                    </tr>
-                                    <tr>
-                                      <td>3</td>
-                                       <td>Ipsum</td>
-                                                    
-                                       <td>$14,900</td>
-                                    </tr>
-                                    <tr>
-                                      <td>4</td>
-                                       <td>Dolor</td>
-                                                 
-                                       <td>$14,900</td>
-                                    </tr>
-                                    <tr>
-                                       <td>5</td>
-                                        <td>Amit</td>
-                                                
-                                        <td>$14,900</td>
-                                     </tr>
-                                 </tbody>
-                              </table>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
+                                       <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="background-color : #2b5876 ; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                       </div>
+                                       <li>Unique Visitors</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
+                                       <div class="progress">
+                                          <div class="progress-bar" role="progressbar" style="background-color : #0ba360 ; width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                       </div>
+                                       <li>Visitors</li>
+                                       <p class="text-muted" style="font-size: 14px;">1,46829873</p>
+                                       <div class="progress">
+                                          
+                                          <div class="progress-bar" role="progressbar" style="background-color : #f86c6b ; width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                       </div>
+                                    </ul>
+                                 </div>
+                              </div>
                            </div>
-                           <p class="text-center">View More</p>
                         </div>
                      </div>
                   </div>
                </div>
             </section>
-            <section class="mt-5">
+          
+            <section class="mt-5 rounded">
                <div class="updates">
                   <div class="row">
-                     <div class="col-lg-6">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Latest Updates</h6>
+                     <div class="col-lg-3 rounded">
+                        <div class="card text-default shadow">   
+                           <div class="card-body d-flex flex-column justify-content-around text-center">
+                              <i class="fas fa-dollar-sign updates-icon" style="background-color: #ccd8e3; color: #2b5b89;"></i>
+                              <h1>32.1K</h1>
+                              <p class="text-muted">Total Expenses</p>
+                              <span><i class="fas fa-chevron-up mr-2"></i>45.2%</span>
+                             
                            </div>
-                           <div class="card-body">
-                                    <table class="table">
-                                       <tbody>
-                                          <tr>
-                                             <td >
-                                                <div class="icon-container" style="background-color: #fe5d70;">
-                                                   <i class="fas fa-briefcase icon"></i>
-                                                </div>
-                                             </td>
-                                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
-                                          </tr>
-                                          <tr>
+                           
+                           </div>
+                        </div>
+                        <div class="col-lg-3 rounded">
+                           <div class="card text-default shadow">
+                              <div class="card-body d-flex flex-column justify-content-around text-center" >
+                                 <i class="far fa-folder updates-icon" style="background-color: #f4d1d2; color: #c71c22;"></i>
+                                 <h1>5.82K</h1>
+                                 <p class="text-muted">Reports Submitted</p>
+                                 <span><i class="fas fa-chevron-down mr-2"></i>5.2%</span>
+                              </div>
+                            
+                              </div>
+                           </div>
+                        <div class="col-lg-6">
+                           <div class="card text-default shadow" style="padding:0.25rem;">
+                             
+                                  <div class="card-body" style="padding:0.25rem;">
+                                    <canvas id="bar_chart" height="400"></canvas>
+                                  </div>
+                            
+                                    </div>
+                           
+                        </div>
+                     </div>
+                    
+                  </div>
+               
+            </section>
+            <section class="mt-5 todo-section rounded" >
+               <div class="recents">
+                  <div class="row">
+                     <div class="col-6">
+                        <div class="card text-default shadow" style="height: 488px;">
+                           
+                              <h4 class="title">Todo List</h4>
+                              <div class="today-information rounded">
+                                 <div class="row">
+                                    <div class="col-6 text-center">
+                                       <h5 class="font-weight-light">
+                                          Today's List
+                                       </h5>
+                                       <p class="text-muted">
+                                          Mar 24th 2020
+                                       </p>
+
+                                    </div>
+                                    <div class="col-6">
+                                       <div class="circle-wrap">
+                                          <div class="circle">
                                             
-                                             <td>
-                                                <div class="icon-container" style="background-color: #fe9365;">
-                                                   <i class="fas fa-check"></i>
-                                                </div>
-                                             </td>
-                                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                          </tr>
-                                          <tr>
+                                            <div class="mask full">
+                                              <div class="fill"></div>
+                                            </div>
+                                           
+                                            <div class="mask half">
+                                              <div class="fill"></div>
+                                            </div>
                                             
-                                             <td>
-                                                <div class="icon-container" style="background-color: #0ac282;">
-                                                   <i class="fas fa-clipboard-list"></i>
-                                                </div>
-                                             </td>
-                                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                              
+                                            <div class="inside-circle">
+                                              70%
+                                            </div>
+                                            
+                                          </div>
+                                    </div>
+                                 </div>
+                                
+                              </div>
+                           </div>
+                       
+                        <div class="card-body todo-content">
+                           <div class="row">
+                              <div class="col-3 align-middle text-center">
+                                 <i class="far fa-check-circle mt-3" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="col-9 todo-description d-flex justify-content-between shadow"
+                            >
+                                 <div class="todo-item px-3 pt-2">
+                                 <h5>Javascript Training</h5>
+                                 <p class="text-muted">at Union University</p>
+                                 </div>
+                                 <div class="todo-time">
+                                    <h5><i class="far fa-clock "></i> 10 am </h5>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row todo-description">
+                              <div class="col-3 align-middle text-center">
+                                 <i class="far fa-check-circle mt-3" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="col-9 todo-description  d-flex justify-content-between shadow" >
+                                 <div class="todo-item px-3 pt-2">
+                                 <h5>Meeting with dev. team</h5>
+                                 <p class="text-muted">at Union University</p>
+                                 </div>
+                                 <div class="todo-time">
+                                    <h5> <i class="far fa-clock"></i> 12 pm </h5>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-3 align-middle text-center">
+                                 <i class="far fa-check-circle mt-3" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="col-9 todo-description d-flex justify-content-between shadow" >
+                                 <div class="todo-item px-3 pt-2">
+                                 <h5>Design Review</h5>
+                                 <p class="text-muted">at Union University</p>
+                                 </div>
+                                 <div class="todo-time">
+                                    <h5> <i class="far fa-clock"></i> 4 pm </h5>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row todo-description">
+                              <div class="col-3 align-middle text-center">
+                                 <i class="far fa-check-circle mt-3" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="col-9 todo-description  d-flex justify-content-between shadow" >
+                                 <div class="todo-item px-3 pt-2">
+                                 <h5>Meeting with dev. team</h5>
+                                 <p class="text-muted">at Union University</p>
+                                 </div>
+                                 <div class="todo-time">
+                                    <h5> <i class="far fa-clock"></i> 6pm </h5>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6">
-                        <div class="card text-default shadow">
-                           <div class="card-header bg-white">
-                              <h6>Realtime Visitors</h6>
-                           </div>
-                               
-                                  <canvas id="myChart_Two" ></canvas>
-                                 </div>
-                        
-                     </div>
                   </div>
-               </div>
+                     <div class="col-6 orders">
+                        <div class="card text-default shadow" style="height: 488px;" >
+                           <div class="card-body">
+                              <h4 class="title">Orders</h4>
+                              <table class="table">
+                                 <thead>
+                                   <tr>
+                                     <th scope="col">#</th>
+                                    
+                                     <th scope="col">ID</th>
+                                     <th scope="col">Name</th>
+                                     <th scope="col">Product</th>
+                                     <th scope="col">Quantity</th>
+                                     <th scope="col">Status</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                    <td>1</td>
+                                    
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                   </tr>
+                                   <tr>
+                                    <td>2</td>
+                                    
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                   </tr>
+                                   
+                                   <tr>
+                                    <td>3</td>
+                                     
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-warning">PENDING</button></td>
+                                   </tr>
+                                   <tr>
+                                    <td>4</td>
+                                    
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                   </tr>
+                                   <tr>
+                                    <td>5</td>
+                                   
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-danger">REJECTED</button></td>
+                                   </tr>
+                                   <tr>
+                                    <td>6</td>
+                                    
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-success">COMPLETED</button></td>
+                                   </tr>
+                                   <tr>
+                                    <td>7</td>
+                                    
+                                     <td>#5469</td>
+                                     <td>Louis Stanley</td>
+                                     <td>Lorem</td>
+                                     <td>231</td>
+                                     <td><button class="btn btn-sm btn-warning">PENDING</button></td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                           </div>
+                        </div>
+                     </div>            
+            </div>
+         </div>
             </section>
             <section class="mt-5" style="visibility: hidden;">
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, incidunt minus magni ipsa illum, magnam soluta molestiae, eveniet vero nostrum pariatur eum! Sit fugit nobis quae ut at itaque. Quo.
@@ -372,45 +499,60 @@
                   <a href="#">
                      <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span>
-                    <span><i class="fas fa-caret-right float-right"></i></span>
+                   
                   </a>
                 </li>
 
-                <li data-toggle="collapse" href="#monthly_list">
+                <li data-toggle="collapse" data-target="#monthlySubmenu">
                   <a href="#">
                      <i class="fas fa-file-invoice"></i>
                     <span>Monthly Accounting</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
-              
+                  
                 </li>
-                <li data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <div id="monthlySubmenu" class="collapse submenu">
+                  <ul>
+                     <li class="d-flex"><a href="#" ><i class="fas fa-caret-right"></i>Expenses</a></li>
+                     <li class="d-flex"><a href="#" ><i class="fas fa-caret-right"></i>Expenses</a></li>
+                   
+                  </ul>
+               </div>
+               
+
+                <li>
                   <a href="#">
                     <i class="fa fa-shopping-cart"></i>
                     <span>Reports</span>
-                    <span><i class="fas fa-caret-right float-right"></i></span>
+                   
                   </a>
                
                 </li>
-                <li data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <li data-toggle="collapse" data-target="#analytics_submenu">
                   <a href="#">
                     <i class="fa fa-shopping-cart"></i>
                     <span>Analytics</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
-               
+                  <div id="analytics_submenu" class="collapse submenu">
+                     <ul>
+                        <li class="d-flex"><a href="#" ><i class="fas fa-caret-right"></i>Expenses</a></li>
+                        <li class="d-flex"><a href="#" ><i class="fas fa-caret-right"></i>Expenses</a></li>
+                     </ul>
+                  </div>
                 </li>
+               
                 <li class="sidebar-dropdown">
                   <a href="#">
                      <i class="fas fa-book-open"></i>
                     <span>Logs</span>
-                    <span><i class="fas fa-caret-right float-right"></i></span>
+                   
                   </a>
                 
                 </li>
                 <li class="sidebar-dropdown">
                   <a href="#">
-                     <i class="fas fa-calendar-alt"></i> 
+                     <i class="far fa-folder"></i> 
                     <span>Reports</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
@@ -418,7 +560,7 @@
                 </li>
                 <li class="sidebar-dropdown">
                   <a href="#">
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-user"></i>
                     <span>Admin</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
@@ -427,35 +569,28 @@
                 <li class="sidebar-dropdown">
                   <a href="#">
                      <i class="fas fa-file-invoice"></i>
-                    <span>E-commerce</span>
-                    <span><i class="fas fa-caret-right float-right"></i></span>
+                    <span>Knowledge</span>
+                   
                   </a>
              
                 </li>
                 <li class="sidebar-dropdown">
                   <a href="#">
                      <i class="fas fa-file-invoice"></i>
-                    <span>E-commerce</span>
+                    <span>Layouts</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
              
                 </li>
                 <li class="sidebar-dropdown">
                   <a href="#">
-                     <i class="fas fa-file-invoice"></i>
-                    <span>E-commerce</span>
+                     <i class="fas fa-dollar-sign"></i>
+                    <span>Settings</span>
                     <span><i class="fas fa-caret-right float-right"></i></span>
                   </a>
              
                 </li>
-                <li class="sidebar-dropdown">
-                  <a href="#">
-                     <i class="fas fa-file-invoice"></i>
-                    <span>E-commerce</span>
-                    <span><i class="fas fa-caret-right float-right"></i></span>
-                  </a>
              
-                </li>
               
            
             </ul>

@@ -170,27 +170,27 @@
     padding: 0.25rem 1rem;
     font-size: 12px;
     }
-    .title{
-    font-weight: 600;
-    font-size: 1em;
-    padding: 5px 0;
-   }
-    .charts .card-body{
-        padding: 0.25rem;
+      .title{
+      font-weight: 600;
+      font-size: 1em;
+      padding: 5px 0;
     }
-    #myChart{
- 
-    height: 265px;
-    overflow: hidden;
-    text-align: left;
-    padding: 0;
-    }
-    #bar_chart{
-      padding: 0px 0px 0px 20px;
-    }
-    .report{
-        height: 485px !important;
-    }
+      .charts .card-body{
+          padding: 0.25rem;
+      }
+      #myChart{
+  
+      height: 265px;
+      overflow: hidden;
+      text-align: left;
+      padding: 0;
+      }
+      #bar_chart{
+        padding: 0px 0px 0px 20px;
+      }
+      .report{
+          height: 485px !important;
+      }
     /*To Do */
 .todo-section .card-body{
     padding: 0.25rem;
